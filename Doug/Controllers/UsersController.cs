@@ -13,7 +13,7 @@ namespace Doug.Controllers
 {
     public class UsersController : Controller
     {
-        private DPFitness_dbEntities db = new DPFitness_dbEntities();
+        private Model1 db = new Model1();
 
         // GET: Users
         public async Task<ActionResult> Index()
