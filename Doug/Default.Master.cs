@@ -30,36 +30,6 @@ namespace Doug
             Session.Clear();
             Response.Redirect("/Login.aspx");
         }
-        //protected void DisplayProfile()
-        //{
-        //    try
-        //    {
-        //        using (var connection = new SqlConnection(ConfigurationManager.AppSettings["connectionString"]))
-        //        {
-        //            connection.Open();
-        //            var sql = "Select * from Users";
-        //            var cmd = new SqlCommand(sql, connection);
-
-        //            using (var dr = cmd.ExecuteReader())
-        //            {
-        //                while (dr.Read())
-        //                {
-
-        //                    {
-
-        //                        Username.Text = dr["Username"].ToString();
-
-
-
-        //                    }
-        //                }
-        //            }
-        //        }
-        //    }
-        //    catch
-        //    {
-
-        //    }
-        //}
+       
     }
 }

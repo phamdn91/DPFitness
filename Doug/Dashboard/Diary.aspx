@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-   
+
     <div class=" row">
         <div class="col-xl-6 col-lg-5">
             <div class="card shadow mb-4">
@@ -34,7 +34,6 @@
                             <asp:TextBox type="number" CssClass="form-control form-control-user" runat="server" ID="Snacks"></asp:TextBox>
                         </div>
                         <asp:Button runat="server" ID="btnDiary" CssClass="btn btn-info btn-user btn-block" OnClick="btnDiary_Click" Text="Update" />
-                        <p id="result"></p>
                 </div>
             </div>
         </div>
@@ -62,9 +61,25 @@
                         <div class="form-group">
                             <asp:TextBox type="number" CssClass="form-control form-control-user" runat="server" ID="Other"></asp:TextBox>
                         </div>
-                        <asp:Button runat="server" ID="btnActivity" CssClass="btn btn-info btn-user btn-block" OnClick="btnActivity_Click" Text="Update" />
+                        <asp:Button runat="server" ID="btnActivity" CssClass="btn btn-info btn-user btn-block" OnClientClick="" OnClick="btnActivity_Click" Text="Update" />
+                        
+<%--                        <button class="btn btn-default" id="test">Test</button>--%>
                 </div>
             </div>
         </div>
     </div>
+
+       <script type="text/javascript">
+           $(function () {
+
+               $("#test").click(function () {
+
+                   alert("Your entry has been updated!");
+
+               });
+
+           });
+
+
+       </script>
 </asp:Content>

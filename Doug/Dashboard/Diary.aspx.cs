@@ -26,6 +26,11 @@ namespace Doug.Dashboard
                 DisplayActivity();
             }
         }
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            //Your operation
+            Page.ClientScript.RegisterStartupScript(this.GetType(), "CallMyFunction", "showContent();", true);
+        }
         protected void DisplayDiary()
         {
             try
